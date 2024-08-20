@@ -1,0 +1,21 @@
+:root {
+    // colors
+    --primary: #127ec2;
+    --black: #313131;
+    --dark: #676a6b;
+    --white: #ffffff;
+    --light: #f7f7f7;
+    --text: #8c8c8c;
+
+    // Fonts
+    --font: "Open Sans", sans-serif;
+
+    // Spacing & box
+    --section-space: 5rem 0;
+    --border-radius: 4px;
+
+    // FX
+    --box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.04);
+    --text-shadow: 5px 5px 20px #000000ab;
+    --main-transition: all ease-in-out .25s;
+}
