@@ -3,11 +3,15 @@
 $dataPath = './config/data.json';
 $jsonContent = file_get_contents($dataPath);
 $data = json_decode($jsonContent, true);
-if (json_last_error() !== JSON_ERROR_NONE) { die('Error deocding the JSON file' . json_last_error_msg()); }
+if (json_last_error() !== JSON_ERROR_NONE) { die('Error decoding the JSON file' . json_last_error_msg()); }
 
 // Organize data for usage.
 $socialLinks = $data['social'];
 $companyName = $data['companyName'];
+$navigation = $data['navigation'];
+
+$logoImagePath = './assets/logo.png';
+
 ?>
 
 <!DOCTYPE html>
@@ -23,14 +27,11 @@ $companyName = $data['companyName'];
     <title><?php echo $companyName ?></title>
 </head>
 <body>
-    <section>
-        <article class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>hi!</h1>
-                </div>
-            </div>
-        </article>
-    </section>
+    <header>
+        <?php require('./includes/nav.php'); ?>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+.navbar {
+    background-color: transparent !important; // Bootstrap override.
+
+    .navbar-brand {
+        img {
+            max-height: 55px;
+        }
+    }
+
+    // Bootstrap override.
+    .navbar-toggler {
+        outline: none !important;
+        border: none !important;
+    }
+
+    .nav-link {
+        padding: 2rem 1rem 2rem 1rem;
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--black);
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+}
