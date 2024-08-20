@@ -1,0 +1,46 @@
+.hero {
+    background-image: url('./assets/keyboard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center;
+
+    .overlay {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #ffffffb3;
+        padding: 10rem 0 5rem;
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            p {
+                color: var(--dark);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero {
+        text-align: left;
+        min-height: 650px;
+
+        .overlay {
+            padding: 13rem 0 5rem;
+            min-height: 650px;
+            background-color: #ffffff5a;
+
+            .content-wrapper {
+                width: 55%;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }
+    }
+}

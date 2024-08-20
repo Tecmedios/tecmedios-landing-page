@@ -13,12 +13,31 @@
         border: none !important;
     }
 
+    .navbar-nav {
+        background-color: var(--white);
+        margin: 1rem 0;
+    }
+
     .nav-link {
-        padding: 2rem 1rem 2rem 1rem;
+        padding: 1.5rem 1rem 1.5rem 1rem;
         font-weight: 700;
         font-size: 14px;
         color: var(--black);
         letter-spacing: 0.5px;
         text-transform: uppercase;
+        transition: var(--main-transition);
+
+        &:hover,
+        &:active {
+            color: var(--primary);
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        .navbar-nav {
+            background-color: transparent;
+        }
     }
 }

@@ -9,6 +9,7 @@ if (json_last_error() !== JSON_ERROR_NONE) { die('Error decoding the JSON file' 
 $socialLinks = $data['social'];
 $companyName = $data['companyName'];
 $navigation = $data['navigation'];
+$hero = $data['hero'];
 
 $logoImagePath = './assets/logo.png';
 
@@ -29,6 +30,7 @@ $logoImagePath = './assets/logo.png';
 <body>
     <header>
         <?php require('./includes/nav.php'); ?>
+        <?php require('./includes/hero.php'); ?>
     </header>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
