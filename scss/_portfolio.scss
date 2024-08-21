@@ -1,0 +1,93 @@
+.portfolio {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        .item {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 1rem;
+            min-height: 400px;
+            cursor: pointer;
+
+            .hidden-content {
+                background-color: var(--white);
+                height: 100%;
+                padding: 3rem;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                opacity: 0;
+                transform: translateY(10px);
+                transition: var(--main-transition);
+
+                &:hover,
+                &:active {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+
+                .content-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+                    h6 {
+                        text-transform: capitalize;
+                    }
+
+                    span {
+                        color: var(--dark);
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        margin: 1rem 0;
+                        font-size: 14px;
+                        color: var(--text);
+                    }
+
+                    a {
+                        color: var(--primary);
+                        font-size: 14px;
+
+                        i {
+                            font-size: 11px;
+                            margin-left: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .portfolio {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio {
+        .grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

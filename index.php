@@ -11,6 +11,7 @@ $companyName = $data['companyName'];
 $navigation = $data['navigation'];
 $hero = $data['hero'];
 $services = $data['services'];
+$portfolio = $data['portfolio'];
 
 $logoImagePath = './assets/logo.png';
 
