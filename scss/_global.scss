@@ -44,3 +44,21 @@ section {
 .border-radius {
     border-radius: var(--border-radius);
 }
+
+.section-title {
+    margin: 3rem auto;
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-style: italic;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section-title {
+        max-width: 50%;
+    }
+}

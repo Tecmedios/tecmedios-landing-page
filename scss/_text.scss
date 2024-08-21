@@ -23,13 +23,22 @@ h3 {
     font-size: 1.5rem;
 }
 
-h5 {
+h4 {
     font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.1rem;
 }
 
 h6 {
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+p {
+    line-height: 27px;
+    color: var(--text);
 }
 
 @media screen and (min-width: 992px) {
