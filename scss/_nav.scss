@@ -1,5 +1,6 @@
 .navbar {
-    background-color: transparent !important; // Bootstrap override.
+    background-color: transparent; // Bootstrap override.
+    transition: var(--main-transition);
 
     .navbar-brand {
         img {
