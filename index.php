@@ -6,9 +6,11 @@ $data = json_decode($jsonContent, true);
 if (json_last_error() !== JSON_ERROR_NONE) { die('Error decoding the JSON file' . json_last_error_msg()); }
 
 // Organize data for usage.
-$socialLinks = $data['social'];
 $companyName = $data['companyName'];
+$companySlogan = $data['companySlogan'];
 $copyright = $data['copyright'];
+$contact = $data['contact'];
+$socialLinks = $data['social'];
 $navigation = $data['navigation'];
 $hero = $data['hero'];
 $services = $data['services'];
@@ -37,6 +39,7 @@ $logoImagePath = './assets/logo.png';
     </header>
 
     <?php require('./includes/services.php'); ?>
+    <?php require('./includes/bottom.php'); ?>
     <?php require('./includes/footer.php'); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

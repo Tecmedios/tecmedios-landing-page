@@ -1,0 +1,55 @@
+.bottom {
+    background-color: var(--md-black);
+
+    h6 {
+        color: var(--light-text);
+        margin-bottom: 2rem;
+    }
+
+    .about {
+        img {
+            max-width: 200px;
+            margin-bottom: 2rem;
+        }
+
+        small {
+            width: 90%;
+        }
+    }
+
+    .contact {
+        .contact-wrapper {
+            a {
+                color: var(--text);
+
+                &:hover,
+                &:active {
+                    color: var(--primary);
+                }
+
+                i {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    .links {
+        .links-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
+
+            a {
+                color: var(--text);
+                font-size: 1.5rem;
+
+                &:hover,
+                &:active {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}
