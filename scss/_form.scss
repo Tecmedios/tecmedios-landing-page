@@ -1,0 +1,21 @@
+form {
+    label,
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    label {
+        display: inline-block;
+        font-size: 14px;
+        margin-bottom: 1rem;
+
+        input,
+        textarea {
+            margin: .5rem 0 0;
+            outline: none;
+            border: 1px solid var(--light-text);
+            padding: .5rem;
+        }
+    }
+}
