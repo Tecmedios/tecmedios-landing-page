@@ -1,5 +1,5 @@
 <section class="bottom">
-    <article class="container">
+    <article class="container fade-in delay-level3">
         <div class="row">
             <div class="col-lg-4 mb-5 about">
                 <div class="content-wrapper">

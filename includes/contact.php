@@ -1,4 +1,4 @@
-<section id="contact" class="contact bg-light">
+<section id="contact" class="contact bg-light fade-in delay-level3">
     <article class="container">
         <div class="row">
             <div class="col-lg-6 mb-5 mb-lg-3 contact-call primary-background">

@@ -1,5 +1,5 @@
 <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-    <div class="container justify-content-between">
+    <div class="container justify-content-between fade-in">
         <a class="navbar-brand" href="<?php echo $navigation[0]['link'] ?>">
             <img src="<?php echo $logoImagePath; ?>" alt="<?php echo $companyName; ?>">
         </a>

@@ -1,4 +1,4 @@
-<section id="services" class="services bg-light">
+<section id="services" class="services bg-light fade-in delay-level3">
     <article class="container">
         <div class="row">
             <div class="section-title text-center">
