@@ -20,7 +20,6 @@ $form = $data['form'];
 $formId = $data['formId'];
 
 $logoImagePath = './assets/logo.png';
-
 ?>
 
 <!DOCTYPE html>

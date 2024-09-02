@@ -14,7 +14,7 @@
                         class="nav-link" 
                         href="<?php echo $item['link']; ?>"
                     >
-                            <?php echo $item['title']; ?>
+                        <?php echo $item['title']; ?>
                     </a>
                 </li>
             <?php endforeach; ?>
@@ -22,3 +22,16 @@
         </div>
     </div>
 </nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarCollapse = document.getElementById('navbarNavDropdown')
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link')
+
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                navbarCollapse.classList.remove('show')
+            })
+        })
+    })
+</script>
