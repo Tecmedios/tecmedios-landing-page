@@ -19,7 +19,8 @@
 
     .contact {
         .contact-wrapper {
-            a {
+            a,
+            span {
                 color: var(--text);
 
                 &:hover,

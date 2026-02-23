@@ -11,14 +11,10 @@
                 <h6>Datos de contacto</h6>
                 <div class="contact-wrapper">
                     <?php foreach($contact as $contactItem) : ?>
-                        <a 
-                            href="<?php echo $contactItem['link']; ?>"
-                            title="<?php echo $contactItem['title']; ?>"
-                            target="_blank"
-                        >
+                        <span>
                             <i class="<?php echo $contactItem['icon']; ?>"></i>
                             <?php echo $contactItem['title']; ?>
-                        </a>
+                        </span>
                     <?php  endforeach; ?>
                 </div>
             </div>
